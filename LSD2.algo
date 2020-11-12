@@ -30,7 +30,9 @@ BEGIN
             END_IF
         END_FOR
     END_FOR
-
-    sum:= sum + hTab3[i];
+    
+    For i FROM 0 to hTab3.length-1 DO
+        sum:= sum + hTab3[i];
+    END_FOR
     Write (sum)
 END
